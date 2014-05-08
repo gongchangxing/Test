@@ -137,12 +137,12 @@ public class JsonLibTest {
 		assertEquals(jsonObject.get("int"), PropertyUtils.getProperty(bean, "int"));
 		assertEquals(jsonObject.get("double"), PropertyUtils.getProperty(bean, "double"));
 		assertEquals(jsonObject.get("func"), PropertyUtils.getProperty(bean, "func"));
-		// System.out.println(PropertyUtils.getProperty(bean, "name"));
-		// System.out.println(PropertyUtils.getProperty(bean, "bool"));
-		// /System.out.println(PropertyUtils.getProperty(bean, "int"));
-		// System.out.println(PropertyUtils.getProperty(bean, "double"));
-		// System.out.println(PropertyUtils.getProperty(bean, "func"));
-		// System.out.println(PropertyUtils.getProperty(bean, "array"));
+		 System.out.println(PropertyUtils.getProperty(bean, "name"));
+		 System.out.println(PropertyUtils.getProperty(bean, "bool"));
+		 System.out.println(PropertyUtils.getProperty(bean, "int"));
+		 System.out.println(PropertyUtils.getProperty(bean, "double"));
+		 System.out.println(PropertyUtils.getProperty(bean, "func"));
+		 System.out.println(PropertyUtils.getProperty(bean, "array"));
 
 		List arrayList = (List) JSONArray.toCollection(jsonObject.getJSONArray("array"));
 		for (Object object : arrayList) {
